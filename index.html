@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SCOUT</title>
+  <link rel="stylesheet" href="colors_and_type.css" />
+  <link rel="stylesheet" href="scout.css" />
+</head>
+<body>
+  <div class="page">
+
+    <!-- 1. Nav -->
+    <header class="nav">
+      <a class="nav-brand" href="#top" aria-label="SCOUT">
+        <svg class="nav-mark" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
+          <rect x="1" y="1" width="4" height="4" fill="currentColor"/>
+          <rect x="7" y="1" width="4" height="4" fill="currentColor" opacity="0.35"/>
+          <rect x="13" y="1" width="4" height="4" fill="currentColor" opacity="0.12"/>
+          <rect x="1" y="7" width="4" height="4" fill="currentColor" opacity="0.35"/>
+          <rect x="7" y="7" width="4" height="4" fill="currentColor"/>
+          <rect x="13" y="7" width="4" height="4" fill="currentColor" opacity="0.35"/>
+          <rect x="1" y="13" width="4" height="4" fill="currentColor" opacity="0.12"/>
+          <rect x="7" y="13" width="4" height="4" fill="currentColor" opacity="0.35"/>
+          <rect x="13" y="13" width="4" height="4" fill="currentColor"/>
+        </svg>
+        <span class="nav-word">SCOUT</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#how">How it works</a>
+        <a href="#verdicts">Verdicts</a>
+        <a href="#desk">Desk</a>
+        <a href="#status">Open status</a>
+      </nav>
+      <div class="nav-end">
+        <span class="demo-quiet">demo</span>
+        <a class="pill-cta" href="#desk">Scout</a>
+      </div>
+    </header>
+
+    <!-- 2. Hero -->
+    <section class="band hero" id="top">
+      <div class="band-inner hero-inner">
+        <h1 class="hero-title">PASTE A CA.<br />SEE IF IT&rsquo;S HOOKED.</h1>
+        <a class="pill-cta pill-cta-lg" href="#desk">Scout</a>
+        <div class="hero-visual" aria-hidden="true">
+          <!-- Original geometric light-study: scan plane + beam, not a prism -->
+          <svg class="hero-svg" viewBox="0 0 420 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="beam" x1="0" y1="180" x2="420" y2="180" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#f5f5f5" stop-opacity="0"/>
+                <stop offset="35%" stop-color="#f5f5f5" stop-opacity="0.55"/>
+                <stop offset="55%" stop-color="#8FB0E0" stop-opacity="0.7"/>
+                <stop offset="78%" stop-color="#DB8A4D" stop-opacity="0.55"/>
+                <stop offset="100%" stop-color="#DB8A4D" stop-opacity="0"/>
+              </linearGradient>
+              <linearGradient id="plane" x1="120" y1="80" x2="320" y2="300" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#8FB0E0" stop-opacity="0.35"/>
+                <stop offset="100%" stop-color="#DB8A4D" stop-opacity="0.25"/>
+              </linearGradient>
+              <radialGradient id="glow" cx="0.55" cy="0.48" r="0.45">
+                <stop offset="0%" stop-color="#DB8A4D" stop-opacity="0.22"/>
+                <stop offset="55%" stop-color="#8FB0E0" stop-opacity="0.08"/>
+                <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <rect width="420" height="360" fill="url(#glow)"/>
+            <!-- floor grid -->
+            <g stroke="rgba(255,255,255,0.06)" stroke-width="1">
+              <path d="M40 280 H380"/><path d="M60 300 H360"/><path d="M80 320 H340"/>
+              <path d="M100 280 V320"/><path d="M160 280 V320"/><path d="M220 280 V320"/><path d="M280 280 V320"/><path d="M340 280 V320"/>
+            </g>
+            <!-- scan plane (diamond standing) -->
+            <path d="M210 70 L310 175 L210 280 L110 175 Z" stroke="url(#plane)" stroke-width="1.5" fill="rgba(143,176,224,0.04)"/>
+            <path d="M210 70 L210 280" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+            <path d="M110 175 L310 175" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+            <!-- cross ticks -->
+            <g stroke="rgba(245,245,245,0.45)" stroke-width="1.25">
+              <path d="M210 118 L210 132"/><path d="M203 125 L217 125"/>
+              <path d="M210 218 L210 232"/><path d="M203 225 L217 225"/>
+            </g>
+            <!-- light beam through plane -->
+            <path d="M20 175 L400 175" stroke="url(#beam)" stroke-width="2"/>
+            <circle cx="210" cy="175" r="4" fill="#f5f5f5"/>
+            <circle cx="210" cy="175" r="14" stroke="rgba(245,245,245,0.2)" stroke-width="1"/>
+            <!-- faint address dust -->
+            <g fill="rgba(255,255,255,0.08)" font-family="Geist Mono, monospace" font-size="9">
+              <text x="28" y="48">0x5upe2&hellip;00b2</text>
+              <text x="300" y="52">hooked</text>
+              <text x="48" y="340">official ca</text>
+            </g>
+          </svg>
+        </div>
+        <p class="hero-sub">Robinhood Chain open-status desk for Phase&nbsp;1 CLIP open.</p>
+      </div>
+    </section>
+
+    <!-- 3. What it is -->
+    <section class="band band-rule" id="what">
+      <div class="band-inner asym">
+        <div class="asym-copy">
+          <h2 class="band-h2">What it is</h2>
+          <p class="band-p">SCOUT is a Robinhood Chain open-status desk. Paste a contract address. We check whether it matches the Official CA posted on the project site (and later X). One clear verdict. No wallet. No noise.</p>
+        </div>
+        <div class="asym-visual" aria-hidden="true">
+          <svg class="band-svg" viewBox="0 0 280 200" fill="none">
+            <rect x="40" y="40" width="200" height="120" rx="2" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <path d="M40 70 H240" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+            <circle cx="60" cy="55" r="3" fill="#4ade80"/>
+            <circle cx="74" cy="55" r="3" fill="rgba(255,255,255,0.2)"/>
+            <circle cx="88" cy="55" r="3" fill="rgba(255,255,255,0.12)"/>
+            <rect x="56" y="92" width="120" height="8" rx="1" fill="rgba(255,255,255,0.1)"/>
+            <rect x="56" y="112" width="168" height="6" rx="1" fill="rgba(255,255,255,0.06)"/>
+            <rect x="56" y="128" width="96" height="6" rx="1" fill="rgba(255,255,255,0.06)"/>
+            <path d="M200 100 L230 115 L200 130 Z" fill="rgba(143,176,224,0.35)" stroke="#8FB0E0" stroke-width="1"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Verdicts band -->
+    <section class="band band-rule" id="verdicts">
+      <div class="band-inner asym">
+        <div class="asym-copy">
+          <h2 class="band-h2">Hooked, soft,<br />or skip</h2>
+          <p class="band-p">Three verdicts only. Green means the CA lines up with Official. Ochre means a story without a clean Official CA. Red means no hook. That is the whole language.</p>
+          <ul class="verdict-list">
+            <li><span class="v-dot hooked"></span><strong>Hooked</strong> matched Official CA. Bond live.</li>
+            <li><span class="v-dot soft"></span><strong>Soft</strong> partial hook. Bond lag or story only.</li>
+            <li><span class="v-dot skip"></span><strong>Skip</strong> no hook. Not on the official list.</li>
+          </ul>
+        </div>
+        <div class="asym-visual" aria-hidden="true">
+          <svg class="band-svg" viewBox="0 0 280 220" fill="none">
+            <g font-family="Geist Mono, monospace" font-size="11" fill="rgba(255,255,255,0.35)">
+              <text x="24" y="48">hooked</text>
+              <text x="24" y="108">soft</text>
+              <text x="24" y="168">skip</text>
+            </g>
+            <rect x="90" y="34" width="160" height="28" rx="14" fill="rgba(74,222,128,0.12)" stroke="#4ade80" stroke-width="1"/>
+            <circle cx="108" cy="48" r="5" fill="#4ade80"/>
+            <rect x="90" y="94" width="120" height="28" rx="14" fill="rgba(212,160,23,0.12)" stroke="#d4a017" stroke-width="1"/>
+            <circle cx="108" cy="108" r="5" fill="#d4a017"/>
+            <rect x="90" y="154" width="88" height="28" rx="14" fill="rgba(248,113,113,0.12)" stroke="#f87171" stroke-width="1"/>
+            <circle cx="108" cy="168" r="5" fill="#f87171"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. How a scout works -->
+    <section class="band band-rule" id="how">
+      <div class="band-inner asym">
+        <div class="asym-copy">
+          <h2 class="band-h2">How a scout<br />works</h2>
+          <p class="band-p">Three steps. Paste, resolve, read the receipt. The desk stays quiet until you ask.</p>
+          <ol class="steps">
+            <li><span class="step-n">01</span>Paste a contract address (or try DEED / SUPER / SKIP).</li>
+            <li><span class="step-n">02</span>Scout resolves against the Official CA on file.</li>
+            <li><span class="step-n">03</span>Read hooked, soft, or skip. Then check Awake and Bond.</li>
+          </ol>
+        </div>
+        <div class="asym-visual" aria-hidden="true">
+          <svg class="band-svg" viewBox="0 0 280 220" fill="none">
+            <path d="M60 40 V180" stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="4 6"/>
+            <circle cx="60" cy="50" r="10" stroke="#f5f5f5" stroke-width="1.5" fill="#0a0a0a"/>
+            <text x="56" y="54" fill="#f5f5f5" font-size="10" font-family="Geist Mono, monospace">1</text>
+            <circle cx="60" cy="110" r="10" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" fill="#0a0a0a"/>
+            <text x="56" y="114" fill="rgba(255,255,255,0.55)" font-size="10" font-family="Geist Mono, monospace">2</text>
+            <circle cx="60" cy="170" r="10" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" fill="#0a0a0a"/>
+            <text x="56" y="174" fill="rgba(255,255,255,0.35)" font-size="10" font-family="Geist Mono, monospace">3</text>
+            <rect x="90" y="38" width="140" height="24" rx="4" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)"/>
+            <rect x="90" y="98" width="110" height="24" rx="4" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)"/>
+            <rect x="90" y="158" width="90" height="24" rx="4" fill="rgba(74,222,128,0.08)" stroke="rgba(74,222,128,0.35)"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. The desk -->
+    <section class="band band-rule" id="desk">
+      <div class="band-inner desk-band">
+        <div class="desk-intro">
+          <h2 class="band-h2">The desk</h2>
+          <p class="band-p">Paste a CA. See if it&rsquo;s hooked. Hard-coded demo lookups only.</p>
+        </div>
+
+        <div class="desk-module">
+          <form class="scout-form" id="scout-form" autocomplete="off">
+            <label class="sr-only" for="ca">Contract address</label>
+            <div class="field-row">
+              <input
+                id="ca"
+                name="ca"
+                type="text"
+                spellcheck="false"
+                autocapitalize="off"
+                autocomplete="off"
+                placeholder="paste a contract address"
+              />
+              <button type="submit" class="btn-scout" id="scout-btn">Scout</button>
+            </div>
+          </form>
+
+          <p class="try">
+            try
+            <button type="button" class="try-link" data-demo="DEED">DEED</button>
+            <span class="try-sep" aria-hidden="true">/</span>
+            <button type="button" class="try-link" data-demo="SUPER">SUPER</button>
+            <span class="try-sep" aria-hidden="true">/</span>
+            <button type="button" class="try-link" data-demo="SKIP">SKIP</button>
+          </p>
+
+          <div class="receipt" id="receipt" hidden>
+            <div class="receipt-line">
+              <span class="receipt-ticker" id="receipt-ticker"></span>
+              <span class="receipt-verdict" id="receipt-verdict"></span>
+            </div>
+            <p class="receipt-fact" id="receipt-fact"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Open status strip -->
+    <section class="status-band" id="status">
+      <div class="status-inner">
+        <div class="status-item">
+          <span class="status-k">Official CA</span>
+          <span class="status-v mono" id="official-ca">0x&hellip;c0ffee</span>
+        </div>
+        <span class="status-rule" aria-hidden="true"></span>
+        <div class="status-item">
+          <span class="status-k">Awake</span>
+          <button type="button" class="awake-toggle" id="awake-toggle" aria-pressed="true" title="Toggle awake">
+            <span class="awake-dot" id="awake-dot"></span>
+            <span id="awake-label">on</span>
+          </button>
+        </div>
+        <span class="status-rule" aria-hidden="true"></span>
+        <div class="status-item">
+          <span class="status-k">Bond</span>
+          <span class="status-v">~66% of $80k</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Giant wordmark + footer -->
+    <footer class="site-foot">
+      <p class="giant-mark" aria-hidden="true">S&nbsp;C&nbsp;O&nbsp;U&nbsp;T</p>
+      <div class="foot-row">
+        <span class="foot-note">Robinhood Chain &middot; Phase 1 CLIP open &middot; costume demo</span>
+        <span class="demo-quiet">demo</span>
+      </div>
+    </footer>
+
+  </div>
+  <script src="scout.js"></script>
+</body>
+</html>
